@@ -41,6 +41,8 @@ Abra no navegador:
 
 Crie um serviço **Web Service** apontando para este repositório.
 
+- **Importante (erro do Python 3.14 no Render)**: para evitar build quebrando (ex.: `pydantic_core` compilando Rust), este repo inclui `.python-version` e `render.yaml` para fixar o **Python 3.12**. Se você não usar Blueprint, configure também a variável de ambiente `PYTHON_VERSION=3.12` no painel do Render.
+
 - **Build Command**:
 
 ```bash
